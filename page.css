@@ -1,3 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --clr-primary: #f39200;
+    --clr-secondry: #f3f3f3;
+    --clr-blue: #1e92fa;
+    --clr-yellow: #f9c87e;
+    --clr-pink: #cfbcab;
+    --clr-orange: #ff9900;
+    --clr-orange-dark: #e69138;
+    --clr-green: #aedd92;
+    --clr-purple: #9575cd;
+    --clr-001: #fb6359;
+    --clr-002: #d0dcff;
+    --clr-btn-action: #b45f06;
+    --clr-on-body: #1f1f1f;
+    --clr-body: #ffffff;
+}
 html,
 body {
   /* position: relative; */
@@ -136,6 +155,109 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.main-box {
+    margin-top: 2rem;
+    background-color: #eeeeee;
+    padding: 2rem;
+    border-radius: 3rem;
+    height: 75vh;
+    width: 40vw;
+  }
+ 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+  .main-box h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    line-height: 220%;
+  }
+  
+  .main-box p {
+    font-size: 1rem;
+    color: #1f1f1f;
+    font-weight: 300;
+    line-height: 110%;
+    text-align: left;
+  }
+
+  
+.box-tpbar {
+    text-align: left;
+    line-height: 110%;
+    margin-bottom: 3rem;
+  }
+  
+  .list-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .list {
+    color: var(--clr-on-body);
+    background-color: var(--clr-orange-dark);
+    height: 18vh;
+    padding: 2rem;
+    width: 9vw;
+    border-radius: 1rem;
+  }
+  .list1 {
+    background-color: #fada5e;
+  }
+  .list2 {
+    background-color: #cfbcab;
+  }
+  .list3 {
+    background-color: #df917c;
+  }
+  .list4 {
+    background-color: #fada5e;
+  }
+  
+  .list p {
+    text-align: center;
+    line-height: 110%;
+    font-size: 1rem;
+    color: var(--clr-on-body);
+  }
+  .load-more {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .load-more a {
+    font-size: 1rem;
+    color: #1f1f1f;
+    font-weight: 300;
+  }
+  
+  .load-more a:hover {
+    color: var(--clr-on-body);
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-load {
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: var(--clr-btn-action);
+    color: var(--clr-body);
+    transition: all ease 1s;
+    border-radius: 2rem;
+    border: none;
+  }
+  .btn-load:hover {
+    background-color: var(--clr-orange-dark);
+    scale: 1.1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
 
 
 /* animated svgs */
