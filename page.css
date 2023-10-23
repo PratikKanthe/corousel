@@ -54,7 +54,6 @@ body {
 }
 
 
-
 .heading-hide{
     font-size: 3rem; 
     transition: all 1s;
@@ -433,3 +432,4 @@ body {
       opacity: 0;
     }
   }
+
